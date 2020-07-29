@@ -1,0 +1,8 @@
+
+*pyc
+.vscode
+.vscode/
+venv
+sip/build/
+sip/__pycache__/
+src/build/
