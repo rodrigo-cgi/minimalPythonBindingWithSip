@@ -5,4 +5,4 @@
 venv
 sip/build/
 sip/__pycache__/
-src/build/
+src/build/*
