@@ -1,4 +1,4 @@
-# Minimal C++ Python Binding with SIP
+# Minimal Python Binding for C++ with SIP
 
 This repository contains a minimal example of how to empower your Python application 
 with c++ libraries, using SIP Python bindings. 
