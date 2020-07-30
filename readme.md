@@ -3,12 +3,20 @@
 This repository contains a minimal example of how to empower your Python application 
 with c++ libraries, using SIP Python bindings. 
 
+Most of the commercial software used in VFX/Animation like Maya, Nuke and Houdini are developed in C++, but they have Python APIs to allow users to quickly develop tools on the software. Though, as a TD or Artist who got deep into development, I started to feel the need to use C++ to improve the performance of my tools or to simply access lower level APIs. 
 
-As an Artist / TD in animation, Python it the king. All commercial tools are either developed
-in python or offer powerful Python APIs for tool developments.  Though there may be some times
-you want to harness the lower level high performance of C++. 
-With SIP bindings you can develop some c++ libraries and incorporate them inside your python application.
-This concept is extremely powerful since it allows you to develop non-processor demanding parts of your application (like UIs) with Python and all of its conveniences, then call c++ libraries for heavier tasks, such as processing large 3D scenes or exr images. 
+After studying C++ for a while, I found myself in a strange place where I had some fresh knowledge in my head and I was keen to put it to use, but I couldn’t really apply it in my work. I had this common misconception that from a certain point, my tools would become pure C++ beauties. Though it is a complicated language and it takes much longer than Python to perform certain tasks (Some seasoned developers may disagree, but here we’re talking about newcomers)
+
+That’s when using both languages to develop a tool helps you to meet your deadlines and please the users. For instance, you can develop pretty much everything in your tool  in python except for the parts that you really need C++ for higher performance, lower level APIs or any other of its features. 
+For instance, the whole GUI can be developed in python, while the heavy 3D scene processing can be done in C++.
+
+The best of both worlds!
+
+For that kind of architecture, we compile the C++ code in a library and use Python Bindings to expose it to the python application. 
+
+I struggled to find beginners information about how to set those bindings properly, so I decided to record the steps I’ve taken and share with people who are in the same process of expanding the development knowledge from Pyhton towards C++.
+
+In this minimal example, you’ll see how to author the bindings using SIP. Which is a technology developed to create the early versions of PyQt. Today it can be used for any kind of application.
 
 
 # Instructions
