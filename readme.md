@@ -43,7 +43,7 @@ virtualenv --python python3 venv
 source venv/bin/activate
 
 ```
-*note*: replace `python3` by the alias of your local instalation of Python 3, e.g.: `python3.6`
+*note*: replace `python3` by the alias of your local installation of Python 3, e.g.: `python3.6`
 
 
 ## Build the library:
@@ -56,7 +56,7 @@ cd src/build
 g++ -c -Wall -Werror -fpic ../helloSip.cpp
 g++ -shared -o libhelloSip.so helloSip.o
 ```
-This shared library is built in an unconventional folder, so you need to add the lobrart location to the LD_LIBRARY_PATH, please, change the path bellow and run the command:
+This shared library is built in an unconventional folder, so you need to add the library location to the LD_LIBRARY_PATH, please, change the path bellow and run the command:
 
 ```
 export LD_LIBRARY_PATH=/path/to/github/cloned/repo/src/build:$LD_LIBRARY_PATH
